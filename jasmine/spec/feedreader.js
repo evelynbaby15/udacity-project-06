@@ -116,20 +116,28 @@ $(function() {
          */
     describe('New Feed Selection', function() {
         // .feed article h2
-        // var h2Content;
+        var h2Content;
 
-        // beforeEach(function(done) {
-        //     loadFeed(0);
-        //     h2Content = document.querySelectorAll('.feed article h2')[0];
-        //     console.log('Get h2Content:', h2Content);
-        //     done();
-        // });
+        beforeEach(function(done) {
+            loadFeed(0, done);
+            h2Content = document.querySelectorAll('.feed article h2')[0];
+            // console.log('Get h2Content:', h2Content);            
+            // done();
+        });
 
-        // it('feed changes', function(done) {
+        it('feed changes', function(done) {
+            setTimeout(function() {
+                // do some stuff
+                loadFeed(1, done);
+                // done();
+            
+              }, 1000);
+            
+            var afterLoadH2 = document.querySelectorAll('.feed article h2')[0];           
 
-
-        //     done();
-        // });
+            expect(afterLoadH2).not.toEqual(h2Content);
+        });
+        
 
     });
 }());
