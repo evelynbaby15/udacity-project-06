@@ -5,5 +5,5 @@
 3. After page loading finished, scroll down to the bottom and you'll see Jasmine test report.
 
 # Reference
-This project is clone from [Udacity frontend-nanodegree-feedreader](https://github.com/udacity/frontend-nanodegree-feedreader) orginally.
+This project is clone from [Udacity frontend-nanodegree-feedreader](https://github.com/udacity/frontend-nanodegree-feedreader) originally.
 You can also find lots of information about Jasmine testing in this project.
